@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>S3 User Portal</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="css/user.css">
+</head>
+
+<body>
+
+<!-- TOP BRAND HEADER -->
+<header class="top-header">
+  <div class="brand-name">Welcome to user portal</div>
+</header>
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+  <div class="sidebar-top">
+    <div class="sidebar-header">
+      <div class="logo-circle">3S</div>
+      <div class="company-block">
+        <div class="company-name">3S-Ultimate Mailer</div>
+        <div class="company-slogan">User Portal</div>
+      </div>
+    </div>
+
+    <div class="sidebar-menu">
+  <a href="#" class="active" data-form="loginForm">
+    <i class="fas fa-right-to-bracket"></i> Login
+  </a>
+  <a href="#" data-form="signupForm">
+    <i class="fas fa-user-plus"></i> Sign Up
+  </a>
+  <a href="#" data-form="forgotForm">
+    <i class="fas fa-unlock-keyhole"></i> Forgot Password
+  </a>
+</div>
+  </div>
+
+  <div class="sidebar-footer">
+    3S-Ultimate Mailer<br>v1.0
+  </div>
+</div>
+
+<!-- MAIN PANEL -->
+<div class="main">
+
+  <!-- LOGIN -->
+  <div class="form-card active" id="loginForm">
+    <div class="form-header">
+      <div class="form-logo">3S</div>
+      <h2>3S-Ultimate Mailer</h2>
+      <p>Login to your portal</p>
+    </div>
+
+    <div class="form-group">
+      <i class="fas fa-user"></i>
+      <input type="text" id="loginUsername" placeholder="Username" required>
+    </div>
+
+    <div class="form-group">
+      <i class="fas fa-lock"></i>
+      <input type="password" id="loginPassword" placeholder="Password" required>
+    </div>
+
+    <button id="loginBtn">
+      <i class="fas fa-right-to-bracket"></i> Login to Portal
+    </button>
+
+    <div class="form-message" id="loginMessage"></div>
+
+    <div class="form-footer">
+      Protected by 3S Secure Identity Platform
+    </div>
+  </div>
+
+  <!-- SIGN UP -->
+  <div class="form-card" id="signupForm">
+    <div class="form-header">
+      <div class="form-logo">3S</div>
+      <h2>Create Your Account</h2>
+      <p>Start using enterprise-grade software</p>
+    </div>
+
+    <div class="form-group">
+      <i class="fas fa-user"></i>
+      <input type="text" id="signupUsername" placeholder="Username" required>
+    </div>
+
+    <div class="form-group">
+      <i class="fas fa-phone"></i>
+      <input type="tel" id="signupWhatsapp" placeholder="WhatsApp Number" required>
+    </div>
+
+    <div class="form-group">
+      <i class="fas fa-envelope"></i>
+      <input type="email" id="signupEmail" placeholder="Email Address" required>
+    </div>
+
+    <div class="form-group">
+      <i class="fas fa-lock"></i>
+      <input type="password" id="signupPassword" placeholder="Password" required>
+    </div>
+
+    <button id="signupBtn">
+      <i class="fas fa-user-plus"></i> Sign Up
+    </button>
+
+    <div class="form-message" id="signupMessage"></div>
+
+    <div class="form-footer">
+      By registering, you agree to 3S Terms & Privacy Policy
+    </div>
+  </div>
+
+  <!-- FORGOT PASSWORD -->
+  <div class="form-card" id="forgotForm">
+    <div class="form-header">
+      <div class="form-logo">3S</div>
+      <h2>Reset Password</h2>
+      <p>Enter details to reset password</p>
+    </div>
+
+    <div class="form-group">
+      <i class="fas fa-user"></i>
+      <input type="text" id="forgotUsername" placeholder="Username" required>
+    </div>
+
+    <div class="form-group">
+      <i class="fas fa-phone"></i>
+      <input type="tel" id="forgotWhatsapp" placeholder="WhatsApp Number" required>
+    </div>
+
+    <div class="form-group">
+      <i class="fas fa-lock"></i>
+      <input type="password" id="forgotPassword" placeholder="New Password" required>
+    </div>
+
+    <button id="forgotBtn">
+      <i class="fas fa-unlock-keyhole"></i> Reset Password
+    </button>
+
+    <div class="form-message" id="forgotMessage"></div>
+
+    <div class="form-footer">
+      3S Secure Identity System
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="main-footer">
+    <div class="footer-section">
+      <h4>Support</h4>
+      <p>Email: jeets3mailer@gmail.com</p>
+      <p>WhatsApp: +91 (824) 046-3330</p>
+    </div>
+    <div class="footer-section">
+      <h4>Version</h4>
+      <p>Portal v1.0</p>
+      <p>© 2026 3S-Ultimate Mailer Solutions. All rights reserved.</p>
+    </div>
+  </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
